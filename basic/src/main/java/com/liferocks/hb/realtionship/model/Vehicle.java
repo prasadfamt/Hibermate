@@ -37,7 +37,7 @@ public class Vehicle {
 
     */
 
-    @ManyToMany (mappedBy = "vehicle")
+   /* @ManyToMany (mappedBy = "vehicle")
     @NotFound(action = NotFoundAction.IGNORE)
     private Collection<Person> persons = new ArrayList<Person>();
 
@@ -47,7 +47,7 @@ public class Vehicle {
 
     public void setPersons(Collection<Person> persons) {
         this.persons = persons;
-    }
+    }*/
 
     public int getVehicleId() {
         return vehicleId;

@@ -14,7 +14,11 @@
 
         <!--<mapping class="com.liferocks.hb.basic.model.UserDetails"/>-->
        <!-- <mapping class="com.liferocks.hb.collections.model.Employee"/>-->
-        <mapping class="com.liferocks.hb.realtionship.model.Person"/>
-        <mapping class="com.liferocks.hb.realtionship.model.Vehicle"/>
+        <!--<mapping class="com.liferocks.hb.realtionship.model.Person"/>
+        <mapping class="com.liferocks.hb.realtionship.model.Vehicle"/>-->
+        <mapping class="com.liferocks.hb.inheritance.model.Vehicle"/>
+        <mapping class="com.liferocks.hb.inheritance.model.TwoWheeler"/>
+        <mapping class="com.liferocks.hb.inheritance.model.FourWheeler"/>
+
     </session-factory>
 </hibernate-configuration>

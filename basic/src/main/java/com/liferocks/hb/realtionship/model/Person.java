@@ -23,13 +23,18 @@ public class Person {
     @JoinColumn(name = "VEHICLE_ID")
     private Vehicle vehicle;*/
 
+    @OneToMany(cascade = CascadeType.PERSIST )
+    /*@JoinTable(name = "PERSON_VEHICLE", joinColumns = @JoinColumn(name = "PERSOON_ID"),
+            inverseJoinColumns = @JoinColumn(name = "VEHICLE_ID"))*/
+    private Collection<Vehicle> vehicle = new ArrayList<Vehicle>();
+
    /* @OneToMany (mappedBy = "person")*/
     /*@JoinTable (name= "PERSON_VEHICLE" ,joinColumns = @JoinColumn(name = "PERSON_ID"),
                     inverseJoinColumns = @JoinColumn(name = "VEHICLE_ID"))
     private Collection<Vehicle> vehicle = new ArrayList<Vehicle>(); */
 
-    @ManyToMany
-    private Collection<Vehicle> vehicle = new ArrayList<Vehicle>();
+    /*@ManyToMany
+    private Collection<Vehicle> vehicle = new ArrayList<Vehicle>();*/
 
    /* public Vehicle getVehicle() {
         return vehicle;

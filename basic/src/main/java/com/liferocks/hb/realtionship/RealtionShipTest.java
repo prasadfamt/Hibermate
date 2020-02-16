@@ -18,6 +18,7 @@ public class RealtionShipTest {
 
         Person person = new Person();
         person.setUserName("Prasad");
+
         Vehicle vehicle = new Vehicle();
         vehicle.setVehicleName("BMW");
         //person.setVehicle(vehicle);
@@ -31,13 +32,14 @@ public class RealtionShipTest {
         /*vehicle.setPerson(person);
         vehicle2.setPerson(person);*/
 
-        vehicle.getPersons().add(person);
-        vehicle.getPersons().add(person);
+        /*vehicle.getPersons().add(person);
+        vehicle.getPersons().add(person);*/
 
+        //session.save(person);
 
-        session.save(person);
-        session.save(vehicle);
-        session.save(vehicle2);
+        session.persist(person);
+       // session.save(vehicle);
+       // session.save(vehicle2);
 
         /* This is also possible
 
