@@ -1,3 +1,7 @@
 To download hibernate latest bundle http://www.hibernate.org/downloads
 
 postgrace 5432
+
+Mysql 3306
+
+https://stackoverflow.com/questions/33103355/hilo-generator-strategy-not-working
